@@ -1,0 +1,15 @@
+#left {
+    float: left;
+    margin: 10%;
+   
+}
+
+#right {
+   float: right;
+   margin: 10%;
+}
+
+#title {
+    text-align: center;
+}
+

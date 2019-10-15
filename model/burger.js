@@ -2,7 +2,7 @@ var orm = require("../config/orm");
 
 var burger = {
     selectAll: (cb) => {
-        orm.selectAll("bugers", (res)=> {
+        orm.selectAll("burgers", (res)=> {
             cb(res);
         });
     },

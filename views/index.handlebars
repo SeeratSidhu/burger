@@ -1,0 +1,32 @@
+
+<h1 id="title"> Eat Da Burger!</h1>
+
+
+<div id="container">
+    <div id="left">
+        <div id="uneaten">
+            {{#each burger}}
+                {{#unless devoured}}
+                    {{> burgers/burger-block devoured=1}}
+                {{/unless}}
+            {{/each}}
+        </div>
+    </div>
+
+    <div id="center">
+        <div class="burgerCenter">
+            <input id="burgerName" type="text" placeholder="What's your burger called?" data-devoured="0">
+            <button id="addBurger" type="button">Click to Add Burger</button>
+        </div>
+    </div>
+
+    <div id="right">
+        <div id="eaten">
+            {{#each burger}}
+                {{#if devoured}}
+                    {{>burgers/burger-block devoured=0}}
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>
